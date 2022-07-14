@@ -1,5 +1,13 @@
 @use "./../01-abstracts/" as *;
 
 body {
-  font-family: $font;
+  font-family: $family-font-body;
+  color: var(--color-font-2);
+}
+
+h1 {
+  font-family: $family-font-heading;
+  font-size: rem(32px);
+  line-height: 1;
+  color: var(--color-font-1);
 }

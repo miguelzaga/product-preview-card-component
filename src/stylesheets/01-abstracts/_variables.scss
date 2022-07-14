@@ -1,10 +1,17 @@
 // Colors
 :root {
-    --color-bg: #fff;
+  --color-bg-1: #f2eae2;
+  --color-bg-2: #fff;
+  --color-font-1: #1c232b;
+  --color-font-2: #6c7289;
+  --color-highlight: #3d8168;
+  --color-btn: #3d8168;
+  --color-btn--hover: #1a4032;
 }
 
 // Fonts
-$font: Arial, Helvetica, sans-serif;
+$family-font-body: "Montserrat", sans-serif;
+$family-font-heading: "Fraunces", serif;
 
 // Breakpoints
 $sm: 320px;

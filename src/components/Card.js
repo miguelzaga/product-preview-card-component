@@ -3,7 +3,7 @@ import parfum from "../images/image-product-mobile.jpg";
 function Card() {
   return (
     <div className="card">
-      <img src={parfum} alt="Bottle of parfum"></img>
+      <img className="card__simg" src={parfum} alt="Bottle of parfum"></img>
       <span className="card__subtitle">Perfume</span>
       <h1 className="card__title">Gabrielle Essence Eau De Parfum</h1>
       <p className="card__description">
