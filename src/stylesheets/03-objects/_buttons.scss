@@ -1,2 +1,9 @@
 @use "./../01-abstracts/" as *;
 
+.button {
+  background-color: var(--color-btn-bg);
+  border: 0;
+  color: var(--color-btn-font);
+  padding: 15px;
+  width: 100%;
+}
