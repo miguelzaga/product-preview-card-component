@@ -3,9 +3,12 @@
 body {
   font-family: $family-font-body;
   color: var(--color-font-2);
+  font-size: rem(14px);
+  line-height: 23px;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $family-font-heading;
   font-size: rem(32px);
   line-height: 1;

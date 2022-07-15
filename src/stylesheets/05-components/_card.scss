@@ -1,7 +1,47 @@
+@use "./../01-abstracts/" as *;
+
 .card {
   max-width: 600;
   margin: auto;
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--color-bg-2);
+
+  &__container {
+    padding: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: rem(12px);
+    line-height: 15px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__price-container {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    display: inline-block;
+    color: var(--color-highlight);
+    margin-right: 24px;
+    font-size: rem(32px);
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  &__price-sec {
+    vertical-align: middle;
+    text-decoration: line-through;
+  }
 }
