@@ -12,6 +12,12 @@
   border: 0;
   border-radius: 8px;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    background-color: var(--color-btn-bg--hover);
+  }
 
   &_icon {
     margin-right: 11px;

@@ -1,6 +1,8 @@
 @use "./../01-abstracts/" as *;
 
 .card {
+  display: flex;
+  flex-flow: column nowrap;
   max-width: 600;
   margin: auto;
   border-radius: 10px;
@@ -43,5 +45,31 @@
   &__price-sec {
     vertical-align: middle;
     text-decoration: line-through;
+  }
+
+  @include breakpoint($md) {
+    flex-direction: row;
+
+    &__container {
+      max-width: 50%;
+      padding: 32px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      width: 250px;
+    }
+
+    &__description {
+      margin-bottom: 29px;
+    }
+
+    &__price-container {
+      margin-bottom: 30px;
+    }
   }
 }

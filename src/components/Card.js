@@ -1,9 +1,17 @@
-import parfum from "../images/image-product-mobile.jpg";
+import parfumMobile from "../images/image-product-mobile.jpg";
+import parfumDesktop from "../images/image-product-desktop.jpg";
 
 function Card() {
   return (
     <div className="card">
-      <img className="card__img" src={parfum} alt="Bottle of parfum"></img>
+      <picture>
+        <source media="(min-width: 640px)" srcSet={parfumDesktop} />
+        <img
+          className="card__img"
+          src={parfumMobile}
+          alt="Bottle of parfum"
+        ></img>
+      </picture>
       <div className="card__container">
         <p className="card__subtitle">Perfume</p>
         <h1 className="card__title">Gabrielle Essence Eau De Parfum</h1>
